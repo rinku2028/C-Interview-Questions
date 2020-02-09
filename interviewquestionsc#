@@ -4,7 +4,6 @@ A class is an encapsulation of methods and properties, also call the foundation 
 
 An object is an instance of a class. Technically, object is block of memory allocated which can be stored in the form of array, variables and collections.
 
-
 2) Mention four fundamental of OOP(Object Oriented Programming) concepts.
 
  Four fundamental concepts of OOP  are:
@@ -41,5 +40,24 @@ There are four steps in code compilation which include:
 •	Combining the newly created code into assemblies.
 •	Loading the Common Language Runtime(CLR).
 •	Executing the assembly by CLR.
+
+ 7) What is Boxing and Unboxing in C#?
+Boxing and Unboxing both are used for type conversions.
+ 
+The process of converting from a value type to a reference type is called boxing. Boxing is an implicit conversion.
+
+//Example of Boxing
+int x=345;
+Object o=x;
+Console.WriteLine(x);
+Console.WriteLine(o);
+
+The process of converting from a reference type to a value type is called unboxing.
+//Example of unboxing
+Object o=345;
+int x=(int)o1;
+Console.WriteLine(x);
+Console.WriteLine(o);
+
 
 
