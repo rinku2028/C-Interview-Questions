@@ -60,4 +60,89 @@ Console.WriteLine(x);
 Console.WriteLine(o);
 
 
+8) What is the difference between “continue” and “break” statements in C#?
+Using break statement, you can 'jump out of a loop' whereas by using a continue statement, you can 'jump over one iteration' and then resume your loop execution.
+
+Continue Example:
+using System;
+
+namespace ConsoleApp9
+{
+    class continueexample
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i <= 5; i++)
+            {
+                if (i == 4)
+                {
+                    continue;
+                }
+                Console.WriteLine("The number is"+ i);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+//Output is 
+The number is 0
+The number is 1
+The number is 2
+The number is 3
+The number is 5
+ 
+
+Break Example:
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp9
+{
+    class breakexample
+    {
+        static void Main(string []args)
+        {
+            for (int i = 0; i <= 5; i++)
+            {
+                if (i == 4)
+                {
+                    break;
+                }
+                Console.WriteLine("The number is " + i);
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
+
+//Output is 
+
+The number is 0
+The number is 1
+The number is 2
+The number is 3
+
+
+9) What are Properties in C#?
+ 
+C# properties are members of a C# class that provide a flexible mechanism to read, write or compute the values of private fields, in other words, by using properties, we can access private fields and set their values. Properties in C# are always public data members. C# properties use get and set methods, also known as accessors, to access and assign values to private fields.
+
+
+10) What are extension methods in C#?
+ 
+Extension methods enable you to add methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. 
+ 
+An extension method is a special kind of static method, but they are called as if they were instance methods on the extended type.
+ 
+How to use extension methods?
+ 
+An extension method is a static method of a static class, where the "this" modifier is applied to the first parameter. The type of the first parameter will be the type that is extended.
+ 
+Extension methods are only in scope when you explicitly import the namespace into your source code with a using directive.
+
+
+
 
